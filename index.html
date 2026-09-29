@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>form&amp;wood — Mobiliário artesanal</title>
+  <meta name="description" content="form&wood desenha e fabrica mobiliário artesanal em madeira maciça, uma peça por vez.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+  <!-- Ícones -->
+  <svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" fill="var(--heart-fill, none)" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Zm4 0V7a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c1.2-3.5 4-5 7-5s5.8 1.5 7 5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <!-- Menu em tela cheia -->
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer__inner">
+      <button class="drawer__close" id="drawerClose" aria-label="Fechar menu">Fechar</button>
+      <nav class="drawer__nav" aria-label="Menu">
+        <a href="#colecao"><span>01</span>Coleção</a>
+        <a href="#amostras"><span>02</span>Amostras</a>
+        <a href="#atelie"><span>03</span>Ateliê</a>
+        <a href="#sob-medida"><span>04</span>Sob medida</a>
+        <a href="#contato"><span>05</span>Contato</a>
+      </nav>
+      <p class="drawer__foot">Rua Mateus Leme, 1240 — Curitiba<br>ola@formandwood.com.br</p>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__main">
+      <header class="header">
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+          <span></span><span></span>
+        </button>
+        <nav class="header__nav" aria-label="Principal">
+          <a href="#colecao">Coleção</a>
+          <a href="#atelie">Sobre nós</a>
+          <a href="#amostras">Amostras</a>
+        </nav>
+        <a href="#top" class="logo" aria-label="form&amp;wood — início">form<em>&amp;</em>wood</a>
+      </header>
+
+      <div class="hero__content">
+        <span class="chip" data-reveal>Série Nórdica — Outono 26</span>
+        <h1 class="hero__title" data-reveal>Sofisticado.<br>Madeira maciça.<br>Feito à mão.</h1>
+
+        <div class="hero__detail" data-reveal>
+          <span class="hero__num">01.</span>
+          <p>Um ateliê onde cada móvel é feito em uma única cópia — de madeira de reflorestamento, com encaixes tradicionais e acabamento natural.</p>
+        </div>
+
+        <div class="hero__actions" data-reveal>
+          <a href="#colecao" class="btn btn--dark">Encomendar peça</a>
+          <a href="#colecao" class="line-link">Ver coleções <i></i></a>
+        </div>
+      </div>
+
+      <ul class="thumbs" data-reveal>
+        <li>
+          <a href="#colecao" class="thumb">
+            <img src="images/poltrona-duna.jpg" alt="Poltrona Duna" loading="eager">
+            <span class="thumb__go"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a href="#colecao" class="thumb">
+            <img src="images/criado-nicho.jpg" alt="Criado Nicho" loading="eager">
+            <span class="thumb__go"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a href="#colecao" class="thumb">
+            <img src="images/banqueta-alta.jpg" alt="Banqueta Alta" loading="eager">
+            <span class="thumb__go"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero__side">
+      <img class="hero__texture" src="images/textura-aneis.jpg" alt="" aria-hidden="true">
+      <div class="hero__icons">
+        <button class="icon-btn" aria-label="Favoritos"><svg><use href="#i-heart"/></svg></button>
+        <button class="icon-btn" aria-label="Sacola"><svg><use href="#i-bag"/></svg><span class="bag-count" id="bagCount" hidden>0</span></button>
+        <button class="icon-btn" aria-label="Conta"><svg><use href="#i-user"/></svg></button>
+      </div>
+
+      <figure class="hero__feature" data-reveal>
+        <img src="images/cadeira-lina.jpg" alt="Cadeira Lina, em freijó com estofado de lã">
+        <figcaption>
+          <span>Cadeira Lina</span>
+          <span>R$ 4.280</span>
+        </figcaption>
+      </figure>
+
+      <a href="#colecao" class="btn btn--ghost hero__catalog">Catálogo completo <svg><use href="#i-arrow"/></svg></a>
+      <a href="#colecao" class="hero__scroll">Rolar <svg><use href="#i-down"/></svg></a>
+    </div>
+  </section>
+
+  <main>
+    <!-- ============ COLEÇÃO ============ -->
+    <section class="section container" id="colecao">
+      <div class="tabs" role="tablist" aria-label="Filtrar coleção" data-reveal>
+        <button class="tab is-active" role="tab" aria-selected="true" data-filter="all">Todas</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="nova">Nova coleção</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="vendidos">Mais vendidas</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="medida">Sob medida</button>
+      </div>
+
+      <ul class="products" id="products">
+        <li class="product" data-tags="nova vendidos" data-reveal>
+          <div class="product__media">
+            <img src="images/cadeira-lina.jpg" alt="Cadeira Lina" loading="lazy">
+            <button class="fav" aria-label="Favoritar Cadeira Lina" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+            <button class="add" aria-label="Adicionar Cadeira Lina à sacola"><svg><use href="#i-plus"/></svg></button>
+          </div>
+          <h3>Cadeira Lina</h3>
+          <p class="product__meta"><span>Freijó · lã</span><strong>R$ 4.280</strong></p>
+        </li>
+        <li class="product" data-tags="nova" data-reveal>
+          <div class="product__media">
+            <img src="images/poltrona-duna.jpg" alt="Poltrona Duna" loading="lazy">
+            <button class="fav" aria-label="Favoritar Poltrona Duna" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+            <button class="add" aria-label="Adicionar Poltrona Duna à sacola"><svg><use href="#i-plus"/></svg></button>
+          </div>
+          <h3>Poltrona Duna</h3>
+          <p class="product__meta"><span>Carvalho · linho</span><strong>R$ 6.950</strong></p>
+        </li>
+        <li class="product" data-tags="vendidos medida" data-reveal>
+          <div class="product__media">
+            <img src="images/criado-nicho.jpg" alt="Criado Nicho" loading="lazy">
+            <button class="fav" aria-label="Favoritar Criado Nicho" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+            <button class="add" aria-label="Adicionar Criado Nicho à sacola"><svg><use href="#i-plus"/></svg></button>
+          </div>
+          <h3>Criado Nicho</h3>
+          <p class="product__meta"><span>Pinus envelhecido</span><strong>R$ 2.740</strong></p>
+        </li>
+        <li class="product" data-tags="vendidos" data-reveal>
+          <div class="product__media">
+            <img src="images/banqueta-alta.jpg" alt="Banqueta Alta" loading="lazy">
+            <button class="fav" aria-label="Favoritar Banqueta Alta" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+            <button class="add" aria-label="Adicionar Banqueta Alta à sacola"><svg><use href="#i-plus"/></svg></button>
+          </div>
+          <h3>Banqueta Alta</h3>
+          <p class="product__meta"><span>Faia · aço preto</span><strong>R$ 1.890</strong></p>
+        </li>
+        <li class="product" data-tags="nova medida" data-reveal>
+          <div class="product__media">
+            <img src="images/poltrona-alba.jpg" alt="Poltrona Alba" loading="lazy">
+            <button class="fav" aria-label="Favoritar Poltrona Alba" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+            <button class="add" aria-label="Adicionar Poltrona Alba à sacola"><svg><use href="#i-plus"/></svg></button>
+          </div>
+          <h3>Poltrona Alba</h3>
+          <p class="product__meta"><span>Capitonê · bouclé</span><strong>R$ 5.320</strong></p>
+        </li>
+        <li class="product" data-tags="medida" data-reveal>
+          <div class="product__media">
+            <img src="images/hero-mesa-lateral.jpg" alt="Mesa Lateral Ponte" loading="lazy">
+            <button class="fav" aria-label="Favoritar Mesa Lateral Ponte" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+            <button class="add" aria-label="Adicionar Mesa Lateral Ponte à sacola"><svg><use href="#i-plus"/></svg></button>
+          </div>
+          <h3>Mesa Lateral Ponte</h3>
+          <p class="product__meta"><span>Carvalho · óleo natural</span><strong>R$ 2.180</strong></p>
+        </li>
+      </ul>
+
+      <div class="section__end" data-reveal>
+        <a href="#colecao" class="btn btn--dark btn--sm">Ver catálogo <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ============ BANNER ============ -->
+    <section class="banner container" data-reveal>
+      <div class="banner__frame">
+        <img src="images/ambiente-jantar.jpg" alt="Cadeira de madeira escura ao lado de mesa redonda de nogueira" loading="lazy">
+        <div class="banner__content">
+          <span class="chip chip--light">Edição limitada</span>
+          <h2>Peças que atravessam gerações.</h2>
+          <a href="#colecao" class="banner__link">Comprar agora <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AMOSTRAS ============ -->
+    <section class="section container" id="amostras">
+      <div class="head" data-reveal>
+        <h2 class="h2">Enviamos amostras grátis —<br><span>para você escolher a madeira certa.</span></h2>
+        <div class="slider-nav">
+          <button class="round-btn" data-slide="-1" aria-label="Anterior"><svg><use href="#i-left"/></svg></button>
+          <button class="round-btn" data-slide="1" aria-label="Próxima"><svg><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+
+      <ul class="swatches" id="swatches" data-reveal>
+        <li class="swatch"><div class="swatch__img"><img src="images/amostra-carvalho.jpg" alt="Amostra de carvalho" loading="lazy"></div><h3>Carvalho</h3><span>Claro · veio reto</span></li>
+        <li class="swatch"><div class="swatch__img"><img src="images/amostra-cumaru.jpg" alt="Amostra de cumaru" loading="lazy"></div><h3>Cumaru</h3><span>Avermelhado · denso</span></li>
+        <li class="swatch"><div class="swatch__img"><img src="images/amostra-nogueira.jpg" alt="Amostra de nogueira" loading="lazy"></div><h3>Nogueira</h3><span>Profunda · ondulada</span></li>
+        <li class="swatch"><div class="swatch__img"><img src="images/amostra-freijo.jpg" alt="Amostra de freijó envelhecido" loading="lazy"></div><h3>Freijó rústico</h3><span>Escovado · textura viva</span></li>
+        <li class="swatch"><div class="swatch__img swatch__img--linen"></div><h3>Linho oliva</h3><span>Estofados · 100% linho</span></li>
+        <li class="swatch"><div class="swatch__img swatch__img--leather"></div><h3>Couro conhaque</h3><span>Curtimento vegetal</span></li>
+      </ul>
+
+      <div class="section__end" data-reveal>
+        <a href="#contato" class="btn btn--dark btn--sm">Pedir amostras <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ============ ATELIÊ ============ -->
+    <section class="section container" id="atelie">
+      <div class="head" data-reveal>
+        <h2 class="h2">Do ateliê —<br><span>para a sua casa.</span></h2>
+        <p class="head__text">Doze anos de ofício em Curitiba. Cada peça passa pelas mãos de no máximo dois marceneiros, que assinam sob o tampo.</p>
+      </div>
+
+      <div class="duo">
+        <figure class="duo__item" data-reveal>
+          <img src="images/ambiente-escritorio.jpg" alt="Escrivaninha e prateleira em madeira clara com cadeira de freijó" loading="lazy">
+          <figcaption><span>Escritório Sereno</span><span>Freijó · 2025</span></figcaption>
+        </figure>
+        <figure class="duo__item" data-reveal>
+          <img src="images/ambiente-mesa.jpg" alt="Mesa de trabalho em carvalho com cadeira de aço e compensado" loading="lazy">
+          <figcaption><span>Mesa Atelier</span><span>Carvalho · 2026</span></figcaption>
+        </figure>
+      </div>
+
+      <ol class="steps">
+        <li data-reveal><span class="num">01.</span><h3>Seleção</h3><p>Tábuas escolhidas uma a uma pelo veio e pela cor. Só madeira certificada.</p></li>
+        <li data-reveal><span class="num">02.</span><h3>Secagem</h3><p>De 6 a 18 meses em secagem natural, para a peça nunca empenar.</p></li>
+        <li data-reveal><span class="num">03.</span><h3>Marcenaria</h3><p>Encaixes cortados à mão — espiga, rabo de andorinha e cunha.</p></li>
+        <li data-reveal><span class="num">04.</span><h3>Acabamento</h3><p>Sete granas de lixa e óleo natural em camadas. A madeira respira.</p></li>
+      </ol>
+    </section>
+
+    <!-- ============ SOB MEDIDA ============ -->
+    <section class="split" id="sob-medida">
+      <div class="split__media" data-reveal>
+        <img src="images/textura-tronco.jpg" alt="" aria-hidden="true" loading="lazy">
+      </div>
+      <div class="split__body" data-reveal>
+        <span class="chip">Projetos sob medida</span>
+        <h2 class="h2">Desenhamos com você<br>a peça que falta.</h2>
+        <div class="hero__detail">
+          <span class="hero__num">02.</span>
+          <p>Para arquitetos e clientes finais: da primeira conversa ao desenho técnico, protótipo em escala e entrega com instalação.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>10–14</dt><dd>semanas de produção</dd></div>
+          <div><dt>1.400+</dt><dd>peças entregues</dd></div>
+          <div><dt>∞</dt><dd>garantia estrutural</dd></div>
+        </dl>
+        <a href="#contato" class="btn btn--dark">Iniciar projeto</a>
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTO ============ -->
+    <section class="section container quote" data-reveal>
+      <img src="images/ambiente-sala.jpg" alt="" aria-hidden="true" class="quote__img" loading="lazy">
+      <blockquote>
+        <p>“Especificamos form&amp;wood quando o móvel precisa ter a mesma permanência que a arquitetura.”</p>
+        <footer><strong>Helena Duarte</strong> — Arquiteta, Duarte Estúdio</footer>
+      </blockquote>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="footer" id="contato">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__cta">
+          <h2>Vamos conversar<br>sobre a sua peça?</h2>
+          <form class="newsletter" id="newsletter" novalidate>
+            <label for="email">Receba uma carta por estação</label>
+            <div class="newsletter__field">
+              <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+              <button type="submit" aria-label="Inscrever"><svg><use href="#i-arrow"/></svg></button>
+            </div>
+            <p class="newsletter__msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="footer__cols">
+          <div>
+            <span class="footer__label">Showroom</span>
+            <p>Rua Mateus Leme, 1240<br>Curitiba — PR</p>
+            <p>Ter a sáb, 10h às 18h</p>
+          </div>
+          <div>
+            <span class="footer__label">Contato</span>
+            <p>ola@formandwood.com.br<br>+55 41 3000-0000</p>
+          </div>
+          <nav aria-label="Rodapé">
+            <span class="footer__label">Explorar</span>
+            <a href="#colecao">Coleção</a>
+            <a href="#amostras">Amostras</a>
+            <a href="#atelie">Ateliê</a>
+            <a href="#sob-medida">Sob medida</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer__mark" aria-hidden="true">form<em>&amp;</em>wood</div>
+
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> form&amp;wood · Feito à mão em Curitiba</span>
+        <span>Fotos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> (licença gratuita)</span>
+        <a href="#top">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
